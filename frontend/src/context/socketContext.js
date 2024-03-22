@@ -34,6 +34,7 @@ export const SocketContextProvider = ({ children }) => {
         setSocket(null);
       }
     }
+    // eslint-disable-next-line
   }, [authUser]);
 
   return <SocketContext.Provider value={{socket, onlineUsers}}>{children}</SocketContext.Provider>;
